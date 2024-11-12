@@ -1,0 +1,9 @@
+[package]
+name = "inmemory_database"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+num-traits = "0.2"
+num-derive = "0.2"
+multimap = "0.10.0"
