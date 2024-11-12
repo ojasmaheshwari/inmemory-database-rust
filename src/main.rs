@@ -50,7 +50,7 @@ fn take_input_and_verify() -> Choice {
     if choice == None || choice.unwrap() < 1 || choice.unwrap() > OPTIONS.len().try_into().unwrap()
     {
         println!("Invalid input, please try again.");
-        take_input_and_verify();
+        return take_input_and_verify();
     }
 
     FromPrimitive::from_i32(choice.unwrap() - 1).expect("get Choice enum from i32")
